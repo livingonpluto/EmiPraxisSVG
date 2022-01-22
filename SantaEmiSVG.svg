@@ -1,0 +1,330 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1920" height="1080" viewBox="0 0 100% 100%">
+
+  <defs>
+    <linearGradient id="the_sky" x1="50%" y1="100%" x2="50%" y2="0%">
+			<stop offset="0%" stop-color="#f0f"/>
+			<stop offset="100%" stop-color="black" />
+		</linearGradient>
+    <polygon id="tree_polygon" points="50 0 70 40 100 80 50 70 0 80 30 40 50 0"/>
+    <g id="tree">
+      <use xlink:href="#tree_polygon" transform="translate(80, 000) scale(1.0)"/>
+      <use xlink:href="#tree_polygon" transform="translate(70, 015) scale(1.2)"/>
+      <use xlink:href="#tree_polygon" transform="translate(60, 030) scale(1.4)"/>
+      <use xlink:href="#tree_polygon" transform="translate(50, 045) scale(1.6)"/>
+      <use xlink:href="#tree_polygon" transform="translate(40, 060) scale(1.8)"/>
+      <use xlink:href="#tree_polygon" transform="translate(30, 075) scale(2.0)"/>
+      <use xlink:href="#tree_polygon" transform="translate(20, 090) scale(2.2)"/>
+      <use xlink:href="#tree_polygon" transform="translate(10, 105) scale(2.4)"/>
+      <use xlink:href="#tree_polygon" transform="translate(00, 120) scale(2.6)"/>
+    </g>
+  </defs>
+
+  <title>Weihnachtsmensch</title>
+
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#the_sky)"/>
+
+  <g id="forest">
+    <use xlink:href="#tree" fill="black" transform="translate(0200, 600) scale(0.8)"/>
+    <use xlink:href="#tree" fill="white" transform="translate(0100, 570) scale(0.8)"/>
+    <use xlink:href="#tree" fill="black" transform="translate(1170, 400) scale(1.0)"/>
+    <use xlink:href="#tree" fill="black" transform="translate(1480, 450) scale(0.9)"/>
+    <use xlink:href="#tree" fill="white" transform="translate(1100, 500) scale(0.8)"/>
+    <use xlink:href="#tree" fill="white" transform="translate(1290, 340) scale(1.2)"/>
+    <use xlink:href="#tree" fill="white" transform="translate(1595, 510) scale(0.8)"/>
+  </g>
+
+  <g id="ground">
+    <ellipse cx="0" cy="1300" rx="1000" ry="500" fill="white"/>
+    <ellipse cx="1400" cy="1200" rx="1000" ry="500" fill="white"/>
+  </g>
+
+  <polygon id="star"
+    points=" 1077,424 1052,397 1014,403 1032,370 1014,337 1052,343 1077,316 1083,354 1117,370 1083,386 " fill="#ffd700">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 1060 370" to="360 1060 370"
+      dur="4s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Fill in your code here!-->
+<!--Santas bag animation-->
+  <g id = "bag">
+  <circle cx="630" cy="815" r="140" fill="#8b4513" />
+  <animateMotion dur="4s" repeatCount="indefinite"
+      path="M20 0 L 50 0 Z" />
+    </g>
+
+<!--Santa bewegungslos-->
+  <g id="santa">
+    <ellipse cx="550" cy="800" rx="144" ry="180" fill="red" />
+    <circle cx="425" cy="750" r="40" fill="white" />
+    <circle cx="550" cy="580" r="75" fill="pink" />
+    <path d= "M 486 618 L 614 618 L 550 770 Z" fill="white"/>
+    <ellipse cx="520" cy="575" rx="10" ry="20" Fill="white" />
+    <ellipse cx="572" cy="575" rx="15" ry="3" Fill="black" stroke="white"/>
+    <circle cx="520" cy="575" r="7" fill="black" />
+    <rect x="480" y="525" width="140" height="20" fill="white"/>
+    <path d= "M 480 525 S 525 470 640 455 S 525 470 620 525"  fill="red"/>
+    <circle cx="640 " cy="455" r="30" fill="white" />
+    <circle cx="500" cy="980" r="40" fill="black" />
+    <circle cx="600" cy="980" r="40" fill="black" />
+
+
+  </g>
+ <!--hand animation-->
+  <g id ="hand">
+    <circle cx="659" cy="710" r="40" fill="white" />
+    <circle cx="659" cy="710" r="19" fill="#8b4513" />
+    <animateMotion dur="4s" repeatCount="indefinite"
+        path="M20 0 L -20 0 Z" />
+  </g>
+  <!--blinking nose-->
+
+<circle cx="547" cy="600" r="7" fill="#FF0000" >
+    <animate attributeName="fill" values="#FF0000;#7D26CD;#FF0000" dur="3s" repeatCount="indefinite" />
+
+ </circle>
+<!--Sterne aus IntelJ-->
+
+<!--Stern 5 Zacken-->
+<polygon id="star5"
+points="
+280.0,200.0
+232.0,224.0
+225.0,276.0
+188.0,238.0
+135.0,247.0
+160.0,200.0
+135.0,153.0
+188.0,162.0
+225.0,124.0
+232.0,176.0
+"    fill="#ffd700">
+<animateTransform attributeName="transform" type="rotate"
+from="0 200 200"
+to="360 200 200"
+dur="4s" repeatCount="indefinite"/>
+</polygon>
+
+<!--Stern 8 Zacken-->
+<polygon id="star8"
+points="
+470.0,100.0
+432.0,113.0
+449.0,149.0
+413.0,132.0
+400.0,170.0
+387.0,132.0
+351.0,149.0
+368.0,113.0
+330.0,100.0
+368.0,87.0
+351.0,51.0
+387.0,68.0
+400.0,30.0
+413.0,68.0
+449.0,51.0
+432.0,87.0
+"    fill="#ffd700">
+<animateTransform attributeName="transform" type="rotate"
+from="0 400 100"
+to="360 400 100"
+dur="4s" repeatCount="indefinite"/>
+</polygon>
+<!-- Stern 10 Ecken-->
+<polygon id="star10"
+points="
+1670.0,66.0
+1633.0,77.0
+1657.0,107.0
+1621.0,94.0
+1622.0,133.0
+1600.0,101.0
+1578.0,133.0
+1579.0,94.0
+1543.0,107.0
+1567.0,77.0
+1530.0,66.0
+1567.0,55.0
+1543.0,25.0
+1579.0,38.0
+1578.0,-1.0
+1600.0,31.0
+1622.0,-1.0
+1621.0,38.0
+1657.0,25.0
+1633.0,55.0
+"    fill="#ffd700">
+<animateTransform attributeName="transform" type="rotate"
+from="0 1600 66"
+to="360 1600 66"
+dur="3s" repeatCount="indefinite"/>
+</polygon>
+
+<!-- Stern 15 Ecken-->
+<polygon id="star15"
+points="
+883.0,356.0
+847.0,363.0
+877.0,384.0
+841.0,377.0
+860.0,408.0
+831.0,386.0
+835.0,423.0
+817.0,391.0
+806.0,426.0
+802.0,389.0
+778.0,417.0
+790.0,382.0
+756.0,397.0
+781.0,370.0
+745.0,371.0
+778.0,356.0
+745.0,341.0
+781.0,342.0
+756.0,315.0
+790.0,330.0
+778.0,295.0
+802.0,323.0
+806.0,286.0
+817.0,321.0
+835.0,289.0
+831.0,326.0
+860.0,304.0
+841.0,335.0
+877.0,328.0
+847.0,349.0
+"    fill="#ffd700">
+<animateTransform attributeName="transform" type="rotate"
+from="0 813 356"
+to="360 813 356"
+dur="3s" repeatCount="indefinite"/>
+</polygon>
+<!--18 Zacken-->
+
+<polygon id="star18"
+points="
+480.0,356.0
+455.0,360.0
+477.0,373.0
+452.0,368.0
+468.0,388.0
+446.0,375.0
+455.0,399.0
+439.0,379.0
+439.0,405.0
+430.0,381.0
+421.0,405.0
+421.0,379.0
+405.0,399.0
+414.0,375.0
+392.0,388.0
+408.0,369.0
+383.0,373.0
+405.0,360.0
+380.0,356.0
+405.0,352.0
+383.0,339.0
+408.0,344.0
+392.0,324.0
+414.0,337.0
+405.0,313.0
+421.0,333.0
+421.0,307.0
+430.0,331.0
+439.0,307.0
+439.0,333.0
+455.0,313.0
+446.0,337.0
+468.0,324.0
+452.0,343.0
+477.0,339.0
+455.0,352.0
+"    fill="#ffd700">
+<animateTransform attributeName="transform" type="rotate"
+from="0 430 356"
+to="360 430 356"
+dur="5s" repeatCount="indefinite"/>
+</polygon>
+<polygon id="star30"
+points="
+1930.0,188.0
+1900.0,191.0
+1929.0,200.0
+1899.0,197.0
+1925.0,212.0
+1896.0,203.0
+1919.0,223.0
+1892.0,208.0
+1910.0,233.0
+1888.0,212.0
+1900.0,240.0
+1882.0,215.0
+1889.0,245.0
+1876.0,217.0
+1876.0,248.0
+1870.0,218.0
+1864.0,248.0
+1864.0,217.0
+1851.0,245.0
+1858.0,215.0
+1840.0,240.0
+1852.0,212.0
+1830.0,233.0
+1848.0,208.0
+1821.0,223.0
+1844.0,203.0
+1815.0,212.0
+1841.0,197.0
+1811.0,200.0
+1840.0,191.0
+1810.0,188.0
+1840.0,185.0
+1811.0,176.0
+1841.0,179.0
+1815.0,164.0
+1844.0,173.0
+1821.0,153.0
+1848.0,168.0
+1830.0,143.0
+1852.0,164.0
+1840.0,136.0
+1858.0,161.0
+1851.0,131.0
+1864.0,159.0
+1864.0,128.0
+1870.0,158.0
+1876.0,128.0
+1876.0,159.0
+1889.0,131.0
+1882.0,161.0
+1900.0,136.0
+1888.0,164.0
+1910.0,143.0
+1892.0,168.0
+1919.0,153.0
+1896.0,173.0
+1925.0,164.0
+1899.0,179.0
+1929.0,176.0
+1900.0,185.0
+"    fill="#ffd700">
+<animateTransform attributeName="transform" type="rotate"
+from="0 1870 188"
+to="360 1870 188"
+dur="2s" repeatCount="indefinite"/>
+</polygon>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</svg>
